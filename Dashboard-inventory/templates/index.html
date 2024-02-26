@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Dashboard</title>
+</head>
+<body>
+
+{ % block body % }
+<div class="container">
+
+    <div class="text">
+
+        <h1>Official American Library</h1>
+
+    </div>
+</div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col md-12">
+
+                <h2>Book List <button type="button" class="btn-green" data-toggle = "modal" data-target = "#Themodal">
+                    Add Book Info</button> </h2>
+
+
+                    <table class="table-line">
+                        
+                        <tr>
+                            <th>Author</th>
+                            <th>Language</th>
+                            <th>Title</th>
+                            <th>ID</th>
+                            <th>Length</th>
+                            <th>type</th>
+                            
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Jules Verne</td>
+                            <td>English</td>
+                            <td>Journey To The Center Of The Earth</td>
+                            <td>5370</td>
+                            <td>Hardback</td>
+
+                            <td>
+                                <a href="" class="btn btn-warning btn xs" data-toggle="modal" data-target="#modaledit">Edit</a>
+                                <a href="" class="btn btn-danger btn-xs" onclick="return confirm('Do you want to Delete?')">Delete</a>
+
+
+                            </td>
+
+                        </tr>
+
+
+                    </table>
+
+            </div>
+
+        </div>
+
+    </div>
+    { % endblock % }
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
